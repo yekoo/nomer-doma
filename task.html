@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomer Doma - test task</title>
+	<link href="https://allfont.net/allfont.css?fonts=neris-light" rel="stylesheet" type="text/css" />
+	<link href="http://fonts.cdnfonts.com/css/neris" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="center-container">
+            
+            <div class="top-bar_title">
+                <div class="top-title">
+                    <img src="./img/pointer.png" alt="pointer icon">
+                    <div class="top-title_text">
+                        <h1>Номер<span class="top-title_doma">Дома.рф</span></h1>
+                        <div class="top-title_small-text">
+                            СЛУЖИМ ЛЮДЯМ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-bar_menu">
+                <div class="top-bar_menu_btn" onClick="selectGroupElement(this)" data-group="g1" data-selected="1">
+                    <img src="./img/btn-house.png" alt="home">
+                </div>
+                <div class="top-bar_menu_btn" onClick="selectGroupElement(this)" data-group="g1">Район</div>
+                <div class="top-bar_menu_btn" onClick="selectGroupElement(this)" data-group="g1">Город</div>
+            </div>
+            <div class="top-bar_circs">
+                <div class="top-bar_circs_btn">
+                    <img src="./img/btn-plus.png" alt="plus button"/>
+                </div>
+                <div class="top-bar_circs_btn">
+                    <img src="./img/btn-lupe.png" alt="lupe button"/>
+                </div>
+    <!-- <div class="top-bar_circs_btn">
+        <img src="./img/btn-lupe.png" alt="lupe button"/>
+    </div> -->
+                <div class="top-bar_circs_counter-container">
+                    <div class="top-bar_circs_btn">
+                        <img src="./img/btn-envelop.png" alt="envelop button"/>
+                    </div>
+                    <div class="top-bar_circs_counter">5</div>
+                </div>
+                <div class="top-bar_circs_btn">
+                    <img src="./img/btn-bell.png" alt="bell button"/>
+                </div>
+                <div class="top-bar_circs_btn">
+                    <img src="./img/btn-chat.png" alt="chat button"/>
+                </div>
+                <div class="top-bar_circs_division"></div>
+                <div class="top-bar_circs_btn">
+                    <img src="./img/btn-user.png" alt="user button"/>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="top-search">
+        <div class="center-container top-search_container">
+           
+            <div class="top-search_cell-adress">
+                <div class="top-search_cell-star">
+                    <img src="./img/hole-star.png" alt="star">
+                </div>
+                <div class="top-search_cell-adress_text">
+                    <div>
+                        <span class="adress_moi-dom">Мой дом: &nbsp;</span>
+                        <span class="adress_concrete">Россия, <b>г. Москва,</b> индекс 135963</span>
+                    </div>
+                    <div>
+                        <span class="adress_street-house">
+                            Набережная Тараса Шевченко 3
+                        </span>
+                    </div>
+                </div>
+                <div class="top-search_cell-star">
+                    <img src="./img/adress-v.png" alt="vee">
+                </div>
+            </div>
+
+            <div class="top-search_cell top-search_cell-empty">
+                <!-- &lt;-- E M P T Y --&gt; -->
+            </div>
+
+            <div class="top-search_cell top-search_cell-block">
+                <input type="text" placeholder="Добавить новый адрес">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="center-container columns">
+        <div class="column-main">
+            <div class="column_tabs">
+                <div class="column-main_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="topTab" data-selected="1">
+                    Новости
+                </div>
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="topTab">
+                    Объявления
+                </div>
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="topTab">
+                    Мероприятия
+                </div>
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="topTab">
+                    Вопросы
+                </div>
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="topTab">
+                    Отчеты
+                </div>
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="topTab">
+                    &equiv;
+                </div>
+            </div>
+
+            <div class="column_inner-tabs">
+                <div class="column_inner-tabs_group">
+                    <div class="column_inner-tabs_group-item" onClick="selectGroupElement(this)" 
+                        data-group="innerTab" data-selected="1">Все события</div>
+                    <div class="column_inner-tabs_group-item" onClick="selectGroupElement(this)" 
+                        data-group="innerTab">Важные</div>
+                    <div class="column_inner-tabs_group-item" onClick="selectGroupElement(this)" 
+                        data-group="innerTab">Мои</div>
+                    <div class="column_inner-tabs_group-item" onClick="selectGroupElement(this)" 
+                        data-group="innerTab">Поиск</div>
+                </div>
+                <div class="column_inner-btns_group">
+                    <div class="column_inner-btns_group-item btn-white">Источники</div>
+                    <div class="column_inner-btns_group-item btn-dark">Добавить</div>
+                </div>
+            </div>
+
+            <div class="column_content">
+                
+
+
+                <div class="post">
+                    <div class="post-props">
+                        <div class="post-props_avatar">
+                            <img src="./img/post-1_userpic.png" alt="userpic">
+                        </div>
+                        <div class="post-props_texts">
+                            <h4 class="post-props_texts_username">
+                                <div class="post-props_texts_username_text">Сергей Титов <span>(Депутат)</span></div>
+                                <img src="./img/post-reveal.png" alt="reveal post" class="reveal-btn">
+                            </h4>
+                            <div class="post-props_texts_date">
+                                <span>25.07.2015 </span>
+                                <img src="./img/globe.png" alt="globe icon">
+                            </div>
+                            <h3 class="post-props_texts_title">
+                                По данному адресу произошёл захват территории
+                            </h3>
+                            <div class="post-props_texts_article">
+                                С последующим строительством гаражей.Территория принадлежит ОАО 
+Ростелеком, захватчиком является председатель ГСК Авто-Новатор.Также 
+была захвачена часть территории принадлежащая дому по адресу....
+                            </div>
+                            <div class="post-props_texts_position">
+                                <img src="./img/post-position-pointer.png" alt="pointer">
+                                <b>Место:</b>
+                                <span>Москва, ул. Набережная Тараса Шевченко 33</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-gallery">
+                        <div class="gallery-line-single">
+                            <img src="./img/gal-01.jpg" alt="photo">
+                        </div>
+                        <div class="gallery-line-double">
+                            <img src="./img/gal-02.jpg" alt="photo">
+                            <img src="./img/gal-03.jpg" alt="photo">
+                        </div>
+                    </div>
+
+                    <div class="post-tools">
+                        <div class="post-tools_block post-tools_block-link-btns">
+                            <img src="./img/post-tools-btn-link.png" alt="link button">
+                            <img src="./img/post-tools-btn-eye.png" alt="link button">
+                        </div>
+                        <div class="post-tools_block post-tools_block-users">
+                            <div class="post-tools_block-users_total">За темой следят <span class="count_text">165</span></div>
+                            <div class="post-tools_block-users_total-arrow"><img src="img/post-tools_arrow-users.png" alt="arrow"></div>
+                            <div class="users-stack">
+                                <img src="./img/userpic-6.jpg" alt="user pic">
+                                <img src="./img/userpic-5.jpg" alt="user pic">
+                                <img src="./img/userpic-4.jpg" alt="user pic">
+                                <img src="./img/userpic-3.jpg" alt="user pic">
+                                <img src="./img/userpic-1.jpg" alt="user pic">
+                                <img src="./img/userpic-2.jpg" alt="user pic" class="marked">
+                                <img src="./img/post-tools-btn-add_user.png" alt="add user" class="users-stack_add-user-btn">
+                            </div>
+                        </div>
+                        <div class="post-tools_block thumbs-group">
+                            <div>
+                                <img src="img/post-tools-btn-tmb_up.png" alt="thumb up">
+                                <span class="thumb-counter">15</span>
+                            </div>
+                            <div>
+                                <img src="img/post-tools-btn-tmb_dn.png" alt="thumb up">
+                                <span class="thumb-counter">3</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="post-comments">
+                        <div class="post-comments_read-all">
+                            Показать все <span class="count_text">208</span> комментариев
+                        </div>
+
+                        <div class="post-comments_item">
+                            <div class="post-comments_item-avatar-col">
+                                <img src="./img/userpic-2.jpg">
+                            </div>
+                            <div class="post-comments_item-texts-col">
+                                <h4 class="commentator_name">
+                                    Низовцев Вячеслав Иванович
+                                    <span class="rang">(Ответсвенный депутат)</span>
+                                </h4>
+                                <div class="post-comments_item-texts_main">
+                                    Пришло сообщение из Префектуры на электронную почту - что гаражи подлежат 
+                                    сносу, дело передано на рассмотрение в МВД и Управу Фили-давыдково, что они 
+                                    собираются искать владельцев этих гаражей.
+                                </div>
+                                <div class="post-comments_item_props">
+                                    <div class="post-comments_item_props-block">
+                                        <div class="post-comment_time-left">3 часа назад</div>
+                                        <div class="post-comment_text-line-divider">|</div>
+                                        <div class="post-comment_answer-btn">Ответить</div>
+                                    </div>
+                                    <div class="post-comments_item_props-block">
+                                        <div class="post-comment_thumbs-group">
+                                            <div>
+                                                <img src="./img/post-comment-btn-tmb_up.png" class="comment_thumb" alt="thumb up">
+                                                <span class="thumb-counter">5</span>
+                                            </div>
+                                            <div>
+                                                <img src="./img/post-comment-btn-tmb_dn.png" class="comment_thumb" alt="thumb up">
+                                                <span class="thumb-counter">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-comments_item-cross-col">
+                                <div class="comment-cross">&times;</div>
+                                <div class="comment-exclamation">
+                                    <img src="./img/comment-exclamation.png" alt="exclamation">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post-comments_item">
+                            <div class="post-comments_item-avatar-col">
+                                <img src="./img/userpic-2.jpg">
+                            </div>
+                            <div class="post-comments_item-texts-col">
+                                <h4 class="commentator_name">
+                                    Сергей Титов
+                                    <span class="rang"></span>
+                                </h4>
+                                <div class="post-comments_item-texts_main">
+                                    Обжаловал бездействие органов власти, направив обращение в Прокуратуру
+                                </div>
+                                <div class="post-comments_item_props">
+                                    <div class="post-comments_item_props-block">
+                                        <div class="post-comment_time-left">40 минут назад</div>
+                                        <div class="post-comment_text-line-divider">|</div>
+                                        <div class="post-comment_answer-btn">Ответить</div>
+                                    </div>
+                                    <div class="post-comments_item_props-block">
+                                        <div class="post-comment_thumbs-group">
+                                            <div>
+                                                <img src="./img/post-comment-btn-tmb_up.png" class="comment_thumb" alt="thumb up">
+                                                <span class="thumb-counter">10</span>
+                                            </div>
+                                            <div>
+                                                <img src="./img/post-comment-btn-tmb_dn.png" class="comment_thumb" alt="thumb up">
+                                                <span class="thumb-counter">2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-comments_item-cross-col">
+                                <div class="comment-cross">&times;</div>
+                                <div class="comment-exclamation">
+                                    <img src="./img/comment-exclamation.png" alt="exclamation">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post-comments_item">
+                            <div class="post-comments_item-avatar-col">
+                                <img src="./img/userpic-2.jpg">
+                            </div>
+                            <div class="post-comments_item-texts-col">
+                                <h4 class="commentator_name">
+                                    Юрист
+                                    <span class="rang"></span>
+                                </h4>
+                                <div class="post-comments_item-texts_main">
+                                    Согласно статье 7.1. КоАП РФ «Самовольное занятие земельного участка», 
+                                    самовольное занятие земельного участка или использование земельного участка 
+                                    без оформленных в установленном порядке правоустанавливающих документов 
+                                    на землю, а в случае необходимости без документов, разрешающих осуществление 
+                                    хозяйственной деятельности, влечет наложение административного штрафа на 
+                                    граждан в размере от пятисот до одной тысячи рублей; на должностных лиц
+                                </div>
+                                <div class="post-comments_item_props">
+                                    <div class="post-comments_item_props-block">
+                                        <div class="post-comment_time-left">13 минут назад</div>
+                                        <div class="post-comment_text-line-divider">|</div>
+                                        <div class="post-comment_answer-btn">Ответить</div>
+                                    </div>
+                                    <div class="post-comments_item_props-block">
+                                        <div class="post-comment_thumbs-group">
+                                            <div>
+                                                <img src="./img/post-comment-btn-tmb_up.png" class="comment_thumb" alt="thumb up">
+                                                <span class="thumb-counter">26</span>
+                                            </div>
+                                            <div>
+                                                <img src="./img/post-comment-btn-tmb_dn.png" class="comment_thumb" alt="thumb up">
+                                                <span class="thumb-counter">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="post-comments_item-cross-col">
+                                <div class="comment-cross">&times;</div>
+                                <div class="comment-exclamation">
+                                    <img src="./img/comment-exclamation.png" alt="exclamation">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+
+
+                    </div>
+
+                    <div class="post-comments_add-comment">
+                        <div class="post-comments_item-avatar-col">
+                            <img class="post-comments_self-avatar" src="./img/userpic-2.jpg">
+                        </div>
+                        <div class="post-comments_item-comment_add-col">
+                            <input type="text" class="post-comments_add-comment_input" placeholder="Комментировать...">
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="post">
+                    <div class="post-props">
+                        <div class="post-props_avatar">
+                            <img src="./img/post-1_userpic.png" alt="userpic">
+                        </div>
+                        <div class="post-props_texts">
+                            <h4 class="post-props_texts_username">
+                                <div class="post-props_texts_username_text">Павел Пономарев <span></span></div>
+                                <img src="./img/post-reveal.png" alt="reveal post" class="reveal-btn">
+                            </h4>
+                            <div class="post-props_texts_date">
+                                <span>25.07.2015</span>
+                                <img src="./img/globe.png" alt="globe icon">
+                            </div>
+                            
+                            
+                            <div class="post-comments_quotation">
+                                <div class="post-comments_quotation_avatar">
+                                    <img src="./img/userpic-2.jpg">
+                                </div>
+                                <div class="post-comments_quotation-arrow">
+                                    <img src="./img/comment-arrow.png" alt="comment direction arrow">
+                                </div>
+                                <div class="post-comments_item-texts_main">
+                                    Мама лгала маленькому Андрюше, что детей находят в капусте, и он 
+                                    как-то со страхом начал смотреть на тушеную капусту с мясом.  
+                                </div>
+                            </div>
+
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="post-tools">
+                        <div class="post-tools_block post-tools_block-link-btns">
+                            <img src="./img/post-tools-btn-link.png" alt="link button">
+                            <img src="./img/post-tools-btn-eye.png" alt="link button">
+                        </div>
+                        <div class="post-tools_block post-tools_block-users">
+                            <div class="post-tools_block-users_total">За темой следят <span class="count_text">165</span></div>
+                            <div class="post-tools_block-users_total-arrow"><img src="img/post-tools_arrow-users.png" alt="arrow"></div>
+                            <div class="users-stack">
+                                <img src="./img/userpic-6.jpg" alt="user pic">
+                                <img src="./img/userpic-5.jpg" alt="user pic">
+                                <img src="./img/userpic-4.jpg" alt="user pic">
+                                <img src="./img/userpic-3.jpg" alt="user pic">
+                                <img src="./img/userpic-1.jpg" alt="user pic">
+                                <img src="./img/userpic-2.jpg" alt="user pic" class="marked">
+                                <img src="./img/post-tools-btn-add_user.png" alt="add user" class="users-stack_add-user-btn">
+                            </div>
+                        </div>
+                        <div class="post-tools_block thumbs-group">
+                            <div>
+                                <img src="img/post-tools-btn-tmb_up.png" alt="thumb up">
+                                <span class="thumb-counter">15</span>
+                            </div>
+                            <div>
+                                <img src="img/post-tools-btn-tmb_dn.png" alt="thumb up">
+                                <span class="thumb-counter">3</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="column-right">
+            <div class="column_tabs column_tabs-right">
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab column-right_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="rightTab" data-selected="1">
+                    Обзор
+                </div>
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab column-right_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="rightTab">
+                    Кто&nbsp;есть&nbsp;кто
+                </div>
+                <div class="column-right_tabs_tab-active column-main_tabs_tab column-right_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="rightTab">
+                    О&nbsp;доме
+                </div>
+
+                <div class="column-main_tabs_tab-idle column-main_tabs_tab column-right_tabs_tab"
+                    onClick="selectGroupElement(this)" data-group="rightTab">
+                    Услуги
+                </div>
+            </div>
+            
+            <div class="column_content">
+                <div class="building-props">
+                    <div class="building-props_emblem">
+                        <img class="" src="./img/emblem-msc.png">
+                    </div>
+                    <div class="building-props_texts">
+                        <h2 class="">Набережная Тараса Шевченко&nbsp;33</h2>
+                        <div class="adress_concrete">
+                            Россия,  <b>г. Москва,</b>  Индекс 128065<br>
+                            Почтовое отделение: № 209
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./img/post-reveal.png" alt="reveal post" class="reveal-btn">
+                    </div>
+                </div>
+                <div class="item-tools item-tools_first bottom-bordered">
+                    <div class="item-tools_btn-block in-favorites">
+                        <div class="item-tools_btn"><img src="./img/hole-star.png" alt="star"></div>
+                        <div class="item-tools_label-left">в избранном</div>
+                    </div>
+                    <div class="item-tools_btn-block">
+                        <span>Поделиться</span>
+                        <div class="item-tools_btn soc-btn soc-btn_left soc-btn_grouped"><img src="img/tool-soc-vk.png" alt="vk.com"></div>
+                        <div class="item-tools_btn soc-btn soc-btn_grouped"><img src="img/tool-soc-tw.png" alt="twitter.com"></div>
+                        <div class="item-tools_btn soc-btn soc-btn_grouped"><img src="img/tool-soc-fb.png" alt="facebook.com"></div>
+                        <div class="item-tools_btn soc-btn soc-btn_grouped"><img src="img/tool-soc-ok.png" alt="odnoklassniki.ru"></div>
+                    </div>
+                </div>
+                <div class="item-tools bottom-bordered">
+                    <div class="item-tools_btn-block">
+                        <div class="item-tools_btn"><img src="./img/tool-panorama.png" alt="panorama"></div>
+                        <div class="item-tools_label-left">Панорама</div>
+                    </div>
+                    <div class="item-tools_btn-block">
+						<label for="show-on-map-switch">
+							<div class="item-tools_label-right">Показать на карте</div>
+						</label>
+                        <!--<div class="item-tools_btn"><img src="./img/toggle-checkbox.png" alt="togggle"></div>-->
+						
+    <div class="switch_box switch_inpup">
+      <div class="input_wrapper">
+        <input type="checkbox" id="show-on-map-switch">
+        <svg class="is_checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 426.67 426.67">
+        <path d="M153.504 366.84c-8.657 0-17.323-3.303-23.927-9.912L9.914 237.265c-13.218-13.218-13.218-34.645 0-47.863 13.218-13.218 34.645-13.218 47.863 0l95.727 95.727 215.39-215.387c13.218-13.214 34.65-13.218 47.86 0 13.22 13.218 13.22 34.65 0 47.863L177.435 356.928c-6.61 6.605-15.27 9.91-23.932 9.91z"/>
+      </svg>
+        <svg class="is_unchecked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.982 212.982">
+        <path d="M131.804 106.49l75.936-75.935c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0L106.49 81.18 30.555 5.242c-6.99-6.99-18.322-6.99-25.312 0-6.99 6.99-6.99 18.323 0 25.312L81.18 106.49 5.24 182.427c-6.99 6.99-6.99 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0L106.49 131.8l75.938 75.937c6.99 6.99 18.322 6.99 25.312 0 6.99-6.99 6.99-18.323 0-25.313l-75.936-75.936z" fill-rule="evenodd" clip-rule="evenodd"/>
+      </svg>
+        </div>
+    </div>
+					
+						
+                        <!-- <span style="display:inline-block; width:50px;height:25px;background:green; border-radius: 12px;"></span> -->
+                    </div>
+                </div>
+
+                <div class="block-image-map">
+                    <img class="block-image-map_mapped-image" src="./img/image-mapped.png" alt="viewpoint">
+                    <img class="block-image-map_imaged-map" src="./img/map-imaged.png" alt="map">
+                </div>
+
+                <div class="item-tools bottom-bordered">
+                    <div class="item-tools_btn-block">
+                        <div class="item-tools_label">
+                            Показать все 
+                            <span class="item-tools_label-count">18</span>
+                            фотографий
+                        </div>
+                    </div>
+                    <div class="item-tools_btn-block">
+                        <div class="flat-transparent-btn flat-transparent-btn_add-photo">
+                            <img src="./img/plus-symbol.png" alt="plus" class="plus"> Добавить фото
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-column_panel">
+                    <div class="table-double">
+                        <div class="table-double_col-left">
+                            <div class="table-double_col_row-lined">
+                                <div>Тип здания</div>
+                                <div></div>
+                            </div>
+                            <div class="table-double_col_row-lined">
+                                <div>Количество этажей</div>
+                                <div></div>
+                            </div>
+                            <div class="table-double_col_row-lined">
+                                <div>Управляющая компания</div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="table-double_col-right">
+                            <div>Жилой дом</div>
+                            <div>12</div>
+                            <div>ООО "Капитал"</div>
+                        </div>
+                    </div>
+                    <div class="right-column_panel_description">
+                        <b>Описание для примера</b> — крепость в центре Москвы и 
+                        древнейшая её часть, главный общественно-политический 
+                        и историко-художественный комплекс города, официальная 
+                        резиденция президента Российской Федерации. Википедия. 
+                    </div>
+                    <span class="tri-points">
+                        <img src="./img/tri-point-btn.png" alt="3 points">
+                    </span>
+                </div>
+
+
+                <div class="right-column_services-panel">
+                    <h3 class="services-title">Услуги поблизости</h3>
+
+
+
+                    <div class="service">
+                        <div class="service-content">
+                            <div>
+                                <img class="service-props_pic" src="./img/serv-pic1.png" alt="avata">
+                            </div>
+                            <div class="service-texts">
+                                <h4 class="service_name">Салон по уходу за волосами "СТРИЖ"</h4>
+                                <div class="service_descr">
+                                    Адрес: Малая Бронная ул., 21/13, стр. 2, Москва<br>
+                                    Телефон:8 (495) 691-96-36 &nbsp;&nbsp; Часы работы: 10:00–20:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-btns bottom-bordered">
+                            <div class="flat-transparent-btn flat-transparent-btn_add-photo">
+                                <img src="./img/plus-symbol.png" alt="plus" class="plus"> Добавить отзыв
+                            </div>
+                            <div class="service-btns-block">
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    Web сайт
+                                </div>
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    На карте
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-content">
+                            <div>
+                                <img class="service-props_pic" src="./img/serv-pic2.png" alt="avata">
+                            </div>
+                            <div class="service-texts">
+                                <h4 class="service_name">Ремонт часов Full Service</h4>
+                                <div class="service_descr">
+                                    Адрес: Смоленский пассаж, Смоленская пл., 3, Москва, 117393<br>
+                                    Телефон:8 (495) 788-89-90 &nbsp;&nbsp; Часы работы: 10:00–22:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-btns bottom-bordered">
+                            <div class="flat-transparent-btn flat-transparent-btn_add-photo">
+                                <img src="./img/plus-symbol.png" alt="plus" class="plus"> Добавить отзыв
+                            </div>
+                            <div class="service-btns-block">
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    Web сайт
+                                </div>
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    На карте
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-content">
+                            <div>
+                                <img class="service-props_pic" src="./img/serv-pic4.png" alt="avata">
+                            </div>
+                            <div class="service-texts">
+                                <h4 class="service_name">Ремонт цифровой техники</h4>
+                                <div class="service_descr">
+                                    Адрес: Малая Бронная ул., 21/13, стр. 2, Москва<br>
+                                    Телефон:8 (495) 691-96-36 &nbsp;&nbsp; Часы работы: 10:00–20:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-btns bottom-bordered">
+                            <div class="flat-transparent-btn flat-transparent-btn_add-photo">
+                                <img src="./img/plus-symbol.png" alt="plus" class="plus"> Добавить отзыв
+                            </div>
+                            <div class="service-btns-block">
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    Web сайт
+                                </div>
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    На карте
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-content">
+                            <div>
+                                <img class="service-props_pic" src="./img/serv-pic3.png" alt="avata">
+                            </div>
+                            <div class="service-texts">
+                                <h4 class="service_name">Официальный длер Mitsubishi</h4>
+                                <div class="service_descr">
+                                    Адрес: Смоленский пассаж, Смоленская пл., 3, Москва, 117393<br>
+                                    Телефон:8 (495) 788-89-90 &nbsp;&nbsp; Часы работы: 10:00–22:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-btns bottom-bordered">
+                            <div class="flat-transparent-btn flat-transparent-btn_add-photo">
+                                <img src="./img/plus-symbol.png" alt="plus" class="plus"> Добавить отзыв
+                            </div>
+                            <div class="service-btns-block">
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    Web сайт
+                                </div>
+                                <div class="flat-transparent-btn flat-transparent-btn_narrow">
+                                    На карте
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <span class="tri-points">
+                        <img src="./img/tri-point-btn.png" alt="3 points">
+                    </span>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
